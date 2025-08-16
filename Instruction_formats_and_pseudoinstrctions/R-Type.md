@@ -57,7 +57,7 @@ These instructions shift the value in `rs1`. The number of bits to shift is spec
 * **SRA / SRAW**: Shift Right Arithmetic
     * **Syntax**: `SRA rd, rs1, rs2` or `SRAW rd, rs1, rs2`
     * **Operation**: `rd = rs1 >> rs2[4:0]`
-    * **Description**: Shifts `rs1` to the right. The vacated bits on the left are filled with copies of the original most-significant bit (the sign bit). This preserves the sign of a signed number.
+    * **Description**: Shifts `rs1` to the right. The vacated bits on the left are filled with copies of the original most-significant bit (the sign bit). This preserves the sign of a signed number (sign extended).
 
 ### Comparison Operations (2)
 These instructions compare two registers and set the destination register to `1` (true) or `0` (false) based on the result.
